@@ -1,0 +1,374 @@
+/* =========================
+   GOOGLE FONT & RESET
+========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    overflow:hidden;
+
+    background:linear-gradient(135deg,#0F2027,#203A43,#2C5364);
+
+}
+
+/* =========================
+   BACKGROUND
+========================= */
+
+.background{
+
+    position:fixed;
+
+    inset:0;
+
+    overflow:hidden;
+
+    z-index:-1;
+
+}
+
+.circle{
+
+    position:absolute;
+
+    border-radius:50%;
+
+    filter:blur(10px);
+
+    animation:float 10s infinite alternate;
+
+}
+
+.circle1{
+
+    width:320px;
+
+    height:320px;
+
+    background:#6C63FF;
+
+    top:-100px;
+
+    left:-100px;
+
+}
+
+.circle2{
+
+    width:260px;
+
+    height:260px;
+
+    background:#00C9FF;
+
+    bottom:-80px;
+
+    right:-80px;
+
+}
+
+@keyframes float{
+
+    from{
+
+        transform:translateY(0);
+
+    }
+
+    to{
+
+        transform:translateY(40px);
+
+    }
+
+}
+
+/* =========================
+   CONTAINER
+========================= */
+
+.container{
+
+    width:100%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:25px;
+
+}
+
+/* =========================
+   CARD
+========================= */
+
+.card{
+
+    width:420px;
+
+    background:rgba(255,255,255,.08);
+
+    border:1px solid rgba(255,255,255,.15);
+
+    backdrop-filter:blur(18px);
+
+    border-radius:25px;
+
+    padding:40px;
+
+    box-shadow:0 20px 50px rgba(0,0,0,.35);
+
+    text-align:center;
+
+}
+
+.card h1{
+
+    color:white;
+
+    font-size:34px;
+
+    margin-bottom:8px;
+
+}
+
+.card p{
+
+    color:#ddd;
+
+    margin-bottom:30px;
+
+}
+
+/* =========================
+   INPUT BOX
+========================= */
+
+.input-box{
+
+    position:relative;
+
+    margin-bottom:22px;
+
+}
+
+.input-box input{
+
+    width:100%;
+
+    padding:15px 45px;
+
+    border:none;
+
+    outline:none;
+
+    border-radius:12px;
+
+    background:rgba(255,255,255,.12);
+
+    color:white;
+
+    font-size:15px;
+
+}
+
+.input-box input::placeholder{
+
+    color:#ddd;
+
+}
+
+.input-box i{
+
+    position:absolute;
+
+    left:15px;
+
+    top:50%;
+
+    transform:translateY(-50%);
+
+    color:white;
+
+}
+
+#togglePassword{
+
+    position:absolute;
+
+    right:15px;
+
+    top:50%;
+
+    transform:translateY(-50%);
+
+    cursor:pointer;
+
+    color:white;
+
+}
+
+/* =========================
+   BUTTON
+========================= */
+
+button{
+
+    width:100%;
+
+    padding:15px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:#4F46E5;
+
+    color:white;
+
+    font-size:16px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+button:hover{
+
+    background:#2563EB;
+
+    transform:translateY(-2px);
+
+}
+
+/* =========================
+   LINKS
+========================= */
+
+.bottom{
+
+    margin-top:20px;
+
+    color:white;
+
+}
+
+.bottom a{
+
+    color:#00C9FF;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+}
+
+.bottom a:hover{
+
+    text-decoration:underline;
+
+}
+
+/* =========================
+   DASHBOARD
+========================= */
+
+.dashboard-card{
+
+    text-align:center;
+
+}
+
+.dashboard-icon{
+
+    font-size:70px;
+
+    color:#00C9FF;
+
+    margin-bottom:20px;
+
+}
+
+.user-details{
+
+    margin:30px 0;
+
+}
+
+.detail{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    background:rgba(255,255,255,.10);
+
+    padding:15px;
+
+    border-radius:12px;
+
+    color:white;
+
+    margin-bottom:15px;
+
+}
+
+.detail i{
+
+    color:#00C9FF;
+
+    font-size:18px;
+
+}
+
+/* =========================
+   LOGOUT
+========================= */
+
+#logoutBtn{
+
+    margin-top:15px;
+
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:500px){
+
+.card{
+
+    width:100%;
+
+    padding:25px;
+
+}
+
+.card h1{
+
+    font-size:28px;
+
+}
+
+}
