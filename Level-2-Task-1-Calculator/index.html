@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PVS Calculator</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="assets/icons/calculator.png">
+</head>
+
+<body>
+
+    <div class="background">
+        <span class="circle one"></span>
+        <span class="circle two"></span>
+        <span class="circle three"></span>
+        <span class="circle four"></span>
+    </div>
+
+    <div class="container">
+
+        <!-- Developer Name -->
+
+        <div class="developer-name">
+
+            <h1>
+                P.V. SREE<br>
+                CHARAN<br>
+                REDDY
+            </h1>
+
+        </div>
+
+
+        <!-- Calculator -->
+
+        <div class="calculator">
+
+            <div class="heading">
+                <h2>Calculator</h2>
+                
+            </div>
+
+            <div class="display">
+
+                <div id="history"></div>
+
+                <input
+                    type="text"
+                    id="display"
+                    readonly
+                    placeholder="0">
+
+            </div>
+
+            <div class="buttons">
+
+                <button class="operator" onclick="clearDisplay()">AC</button>
+
+                <button class="operator" onclick="deleteLast()">DEL</button>
+
+                <button class="operator" onclick="appendValue('%')">%</button>
+
+                <button class="operator" onclick="appendValue('/')">÷</button>
+
+                <button onclick="appendValue('7')">7</button>
+
+                <button onclick="appendValue('8')">8</button>
+
+                <button onclick="appendValue('9')">9</button>
+
+                <button class="operator" onclick="appendValue('*')">×</button>
+
+                <button onclick="appendValue('4')">4</button>
+
+                <button onclick="appendValue('5')">5</button>
+
+                <button onclick="appendValue('6')">6</button>
+
+                <button class="operator" onclick="appendValue('-')">−</button>
+
+                <button onclick="appendValue('1')">1</button>
+
+                <button onclick="appendValue('2')">2</button>
+
+                <button onclick="appendValue('3')">3</button>
+
+                <button class="operator" onclick="appendValue('+')">+</button>
+
+                <button class="zero" onclick="appendValue('0')">0</button>
+
+                <button onclick="appendValue('.')">.</button>
+
+                <button class="equal" onclick="calculate()">=</button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
